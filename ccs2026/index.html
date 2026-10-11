@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Effective Graph — CCS 2026</title>
+<meta name="description" content="Papers, code and references for the CCS 2026 talk by Xuan Wang and Luis M. Rocha.">
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #22252b; --muted: #61666f; --rule: #e3e0d8;
+    --link: #2f5f93; --hover: #b0485a; --ig: #4477AA; --eg: #CC6677;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181c; --fg: #e8e6e1; --muted: #a2a6ad; --rule: #2e3137;
+            --link: #8db8e6; --hover: #e6909f; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1rem 3rem; }
+  .bar { height: 4px; width: 5rem; margin-bottom: 1.5rem;
+         background: linear-gradient(90deg, var(--ig) 50%, var(--eg) 50%); border-radius: 2px; }
+  h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 .5rem; text-wrap: balance; }
+  .authors { margin: 0; }
+  .venue { margin: .25rem 0 0; color: var(--muted); font-size: .9rem; }
+  h2 { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+       margin: 2.2rem 0 .6rem; padding-bottom: .3rem; border-bottom: 1px solid var(--rule); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .7rem; }
+  li { min-width: 0; }
+  a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--rule); overflow-wrap: anywhere; }
+  a:hover { color: var(--hover); border-color: var(--hover); }
+  .what { display: block; color: var(--muted); font-size: .9rem; }
+  em { font-style: italic; }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bar"></div>
+  <h1>The Effective Graph Improves Prediction of Network Dynamics in Biochemical Models</h1>
+  <p class="authors"><strong>Xuan Wang</strong> and Luis M. Rocha</p>
+  <p class="venue">Conference on Complex Systems (CCS 2026) · 12 October 2026</p>
+
+  <h2>Our papers</h2>
+  <ul>
+    <li><a href="https://doi.org/10.1073/pnas.2022598118">Gates, Correia, Wang &amp; Rocha. The effective graph reveals redundancy, canalization, and control pathways in biochemical regulation and signaling. <em>PNAS</em> 118(12), 2021</a>
+      <span class="what">The effective graph: the method behind this talk.</span></li>
+    <li><a href="https://doi.org/10.3389/fphys.2018.01046">Correia, Gates, Wang &amp; Rocha. CANA: a Python package for quantifying control and canalization in Boolean networks. <em>Front. Physiol.</em> 9:1046, 2018</a></li>
+    <li><a href="https://doi.org/10.1093/bioinformatics/btaf461">Marcus, Rozum, Sizek &amp; Rocha. CANA v1.0.0: efficient quantification of canalization in automata networks. <em>Bioinformatics</em> 41(10), 2025</a></li>
+  </ul>
+
+  <h2>Related work from the lab</h2>
+  <ul>
+    <li><a href="https://doi.org/10.1371/journal.pone.0055946">Marques-Pita &amp; Rocha. Canalization and control in automata networks: body segmentation in <em>Drosophila melanogaster</em>. <em>PLoS ONE</em> 8(3), 2013</a></li>
+    <li><a href="https://doi.org/10.1038/srep24456">Gates &amp; Rocha. Control of complex networks requires both structure and dynamics. <em>Sci. Rep.</em> 6:24456, 2016</a></li>
+    <li><a href="https://doi.org/10.1098/rsif.2021.0659">Manicka, Marques-Pita &amp; Rocha. Effective connectivity determines the critical dynamics of biochemical networks. <em>J. R. Soc. Interface</em> 19(186), 2022</a></li>
+    <li><a href="https://doi.org/10.3390/e25020374">Costa, Rozum, Marcus &amp; Rocha. Effective connectivity and bias entropy improve prediction of dynamical regime in automata networks. <em>Entropy</em> 25(2):374, 2023</a></li>
+  </ul>
+
+  <h2>Code</h2>
+  <ul>
+    <li><a href="https://github.com/CASCI-lab/CANA">github.com/CASCI-lab/CANA</a>
+      <span class="what">Python library for Boolean networks: canalization, the effective graph, control.</span></li>
+  </ul>
+
+  <h2>Lab</h2>
+  <ul>
+    <li><a href="https://casci.binghamton.edu/publications.php">CASCI lab publications</a>
+      <span class="what">Complex Adaptive Systems &amp; Computational Intelligence lab (Rocha lab).</span></li>
+  </ul>
+
+  <h2>Cited in the talk</h2>
+  <ul>
+    <li><a href="https://doi.org/10.1186/s41236-017-0007-6">Gómez Tejeda Zañudo, Scaltriti &amp; Albert. <em>Cancer Convergence</em> 1:5, 2017</a>
+      <span class="what">Breast cancer network.</span></li>
+    <li><a href="https://doi.org/10.1007/s10884-013-9312-7">Fiedler, Mochizuki, Kurosawa &amp; Saito. <em>J. Dyn. Diff. Eq.</em> 25(3), 2013</a></li>
+    <li><a href="https://doi.org/10.1016/j.jtbi.2013.06.009">Mochizuki, Fiedler, Kurosawa &amp; Saito. <em>J. Theor. Biol.</em> 335, 2013</a></li>
+    <li><a href="https://doi.org/10.1073/pnas.1617387114">Zañudo, Yang &amp; Albert. <em>PNAS</em> 114(28), 2017</a>
+      <span class="what">Feedback vertex set control.</span></li>
+    <li><a href="https://doi.org/10.1038/nature10011">Liu, Slotine &amp; Barabási. <em>Nature</em> 473, 2011</a></li>
+    <li><a href="https://doi.org/10.1186/1752-0509-6-96">Helikar et al. <em>BMC Syst. Biol.</em> 6:96, 2012</a>
+      <span class="what">Cell Collective: source of the 79 models.</span></li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Xuan Wang · wangx@binghamton.edu</p>
+
+  <footer>Indiana University Bloomington · Binghamton University · Universidade Católica Portuguesa</footer>
+</main>
+</body>
+</html>
